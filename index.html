@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New York Tamil Development Council</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <style>
+    :root {
+      --bg-color: #F2F0EF;
+      --primary-color: #8D0E17;
+      --secondary-color: #C71843;
+      --accent-light: #F5B577;
+      --accent-lighter: #F9D889;
+      --text-color: #333;
+      --heading-font: 'Poppins', sans-serif;
+      --body-font: 'Open Sans', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--body-font);
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-family: var(--heading-font);
+      font-size: 1.5rem;
+      color: var(--primary-color);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary-color);
+    }
+
+    nav i {
+      margin-right: 0.5rem;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 2rem;
+      flex-wrap: wrap-reverse;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text h1 {
+      font-family: var(--heading-font);
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-text a.button {
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-text a.button:hover {
+      background-color: var(--primary-color);
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        padding: 2rem 1rem;
+      }
+
+      nav ul {
+        gap: 1rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    /* Optional Section for Styling Later */
+    .section {
+      padding: 4rem 2rem;
+      background-color: var(--accent-lighter);
+    }
+
+    .section h2 {
+      font-family: var(--heading-font);
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .section p {
+      max-width: 800px;
+    }
+
+    footer {
+      background: white;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">New York Tamil Development Council</div>
+    <nav>
+      <ul>
+        <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
+        <li><a href="#"><i class="fas fa-hands-helping"></i>Programs</a></li>
+        <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Our Mission</h1>
+      <p>Empowering communities through action, compassion, and connection. Join us in creating a brighter future for all.</p>
+      <a href="#" class="button">Learn More</a>
+    </div>
+    <div class="hero-image">
+      <img src="cc.png" alt="New York Tamil Community center">
+    </div>
+  </section>
+
+  <!-- Optional Placeholder Section -->
+  <section class="section">
+    <h2>What We Do</h2>
+    <p>We provide support programs, educational initiatives, and outreach efforts designed to uplift underserved communities and inspire meaningful change. Our work is fueled by dedicated volunteers and donors like you.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 New York Tamil Development Council. All rights reserved.
+  </footer>
+
+</body>
+</html>
